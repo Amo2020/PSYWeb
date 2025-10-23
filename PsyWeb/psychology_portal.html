@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>心岸心理咨询中心</title>
+  <style>
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d8f0ee;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 22px;
+      color: #047;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #046;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .banner {
+      background: linear-gradient(120deg, #d8f0ee, #f3f8fa);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .banner h2 {
+      font-size: 28px;
+      color: #024;
+    }
+    .section {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .section h3 {
+      font-size: 22px;
+      border-left: 5px solid #83c5be;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      color: #035;
+    }
+    .consultant {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .card h4 {
+      margin-top: 15px;
+      color: #024;
+    }
+    footer {
+      background-color: #e5efee;
+      text-align: center;
+      padding: 30px 10px;
+      color: #555;
+      font-size: 14px;
+      margin-top: 80px;
+    }
+    /* 隐藏线索区域 */
+    .hidden-note {
+      display: none;
+    }
+    .card:nth-child(2):hover .hidden-note {
+      display: block;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>心岸心理咨询中心</h1>
+    <nav>
+      <a href="#about">关于我们</a>
+      <a href="#team">心理师团队</a>
+      <a href="#service">服务项目</a>
+      <a href="disease.html">疾病科普</a>
+      <a href="test.html">心理自测题</a>
+      <a href="register.html">注册/登录</a>
+      <a href="booking.html">预约咨询</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>让心灵，重新找到平衡</h2>
+    <p>—— 我们愿意倾听每一份不安 ——</p>
+  </section>
+
+  <section id="about" class="section">
+    <h3>关于我们</h3>
+    <p>心岸心理咨询中心致力于提供专业、安全的心理咨询服务。我们的咨询师团队均持有国家二级心理咨询师证书，擅长情绪管理、人际关系与焦虑抑郁等方向。</p>
+    <p>我们相信，每一颗心都值得被温柔对待。<span style="color:#f9f9fb">CODE-042A</span></p>
+  </section>
+
+  <section id="team" class="section">
+    <h3>心理师团队</h3>
+    <div class="consultant">
+      <div class="card">
+        <img src="consultant1.jpg" alt="心理师 李晨">
+        <h4>李晨</h4>
+        <p>擅长青少年心理疏导与家庭关系调节。</p>
+      </div>
+      <div class="card">
+        <img src="consultant2.jpg" alt="心理师 沈安">
+        <h4>沈安</h4>
+        <p>专注于梦境解析与潜意识疗法。</p>
+        <div class="hidden-note">梦里有光，也有出口。 <a href="session.html?uid=042">进入会话</a></div>
+      </div>
+      <div class="card">
+        <img src="consultant3.jpg" alt="心理师 王蕾">
+        <h4>王蕾</h4>
+        <p>专注焦虑与睡眠障碍的长期干预。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="service" class="section">
+    <h3>服务项目</h3>
+    <ul>
+      <li>个体咨询</li>
+      <li>团体辅导</li>
+      <li>梦境分析</li>
+      <li>在线测评（<a href="assessment.html">开始测评</a>）</li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <p>邮箱：<a href="mailto:contact@xinan-psy.com">contact@xinan-psy.com</a></p>
+    <p>地址：上海市静安区文园路42号</p>
+    <p>©2025 心岸心理咨询中心 版权所有</p>
+    <!-- CaseID: 042-A -->
+  </footer>
+</body>
+</html>

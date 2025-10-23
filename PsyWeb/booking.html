@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>预约咨询 - 心理咨询平台</title>
+  <style>
+    body { font-family: "Microsoft YaHei", sans-serif; margin: 0; background-color: #f9fafc; color: #333; }
+    header { background-color: #4c8bf5; color: white; padding: 20px; text-align: center; }
+    nav { background: #f0f4f9; display: flex; justify-content: center; gap: 30px; padding: 10px; }
+    nav a { text-decoration: none; color: #4c8bf5; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 600px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    input, select, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    button { width: 100%; padding: 10px; background: #4c8bf5; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #3a76d8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>预约心理咨询</h1>
+    <p>填写信息，我们将为您安排专业咨询师。</p>
+  </header>
+
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="disease.html">疾病科普</a>
+    <a href="test.html">心理自测题</a>
+    <a href="register.html">注册/登录</a>
+    <a href="booking.html">预约咨询</a>
+  </nav>
+
+  <main>
+    <form>
+      <label>姓名</label>
+      <input type="text" required>
+
+      <label>联系方式（邮箱或电话）</label>
+      <input type="text" required>
+
+      <label>咨询类型</label>
+      <select>
+        <option>情绪问题</option>
+        <option>焦虑压力</option>
+        <option>人际关系</option>
+        <option>睡眠障碍</option>
+        <option>其他</option>
+      </select>
+
+      <label>备注（可选）</label>
+      <textarea rows="4"></textarea>
+
+      <button type="submit">提交预约</button>
+    </form>
+  </main>
+</body>
+</html>
